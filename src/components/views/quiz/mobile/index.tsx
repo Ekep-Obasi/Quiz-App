@@ -1,8 +1,7 @@
-
 const QuizMobile = () => {
   return (
     <main>
-      <h1>Details Desktop</h1>
+      <h1>Quiz Mobile</h1>
     </main>
   );
 };

@@ -1,8 +1,8 @@
 "use client";
 
-import QuizDesktop from "@/components/views/display/desktop";
-import QuizMobile from "@/components/views/display/mobile";
-import useResponsive from "@/hooks/Responsive";
+import QuizDesktop from "@/components/views/quiz/desktop";
+import QuizMobile from "@/components/views/quiz/mobile";
+import useResponsive from "@/hooks/useRsponsive";
 
 interface Props {}
 

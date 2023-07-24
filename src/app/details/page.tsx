@@ -2,7 +2,7 @@
 
 import DetailsDesktop from "@/components/views/details/desktop";
 import DetailsMobile from "@/components/views/details/mobile";
-import useResponsive from "@/hooks/Responsive";
+import useResponsive from "@/hooks/useRsponsive";
 
 interface Props {}
 

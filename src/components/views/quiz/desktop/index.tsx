@@ -1,7 +1,7 @@
 const QuizDesktop = () => {
   return (
     <main>
-      <h1>Details Desktop</h1>
+      <h1>Quiz Desktop</h1>
     </main>
   );
 };

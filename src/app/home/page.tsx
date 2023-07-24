@@ -2,7 +2,7 @@
 
 import HomeDesktop from "@/components/views/home/desktop";
 import HomeMobile from "@/components/views/home/mobile";
-import useResponsive from "@/hooks/Responsive";
+import useResponsive from "@/hooks/useRsponsive";
 
 interface Props {}
 
