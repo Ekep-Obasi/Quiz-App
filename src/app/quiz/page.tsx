@@ -1,9 +1,11 @@
+"use client";
+
+import QuizDesktop from "@/components/views/display/desktop";
+import QuizMobile from "@/components/views/display/mobile";
+import useResponsive from "@/hooks/Responsive";
+
 interface Props {}
 
-export default function Quiz({}: Props) {
-  return (
-    <div>
-      <h1>Quiz Page</h1>
-    </div>
-  );
+export default function Details({}: Props) {
+  return <>{useResponsive(540) ? <QuizDesktop /> : <QuizMobile />}</>;
 }

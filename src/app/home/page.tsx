@@ -1,10 +1,11 @@
 "use client";
+
+import HomeDesktop from "@/components/views/home/desktop";
+import HomeMobile from "@/components/views/home/mobile";
+import useResponsive from "@/hooks/Responsive";
+
 interface Props {}
 
 export default function Home({}: Props) {
-  return (
-    <main>
-      <h1>Quiz App</h1>
-    </main>
-  );
+  return <>{useResponsive(540) ? <HomeDesktop /> : <HomeMobile />}</>;
 }

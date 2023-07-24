@@ -1,9 +1,11 @@
+"use client";
+
+import DetailsDesktop from "@/components/views/details/desktop";
+import DetailsMobile from "@/components/views/details/mobile";
+import useResponsive from "@/hooks/Responsive";
+
 interface Props {}
 
-export default function Detail({}: Props) {
-  return (
-    <div>
-      <h1>Details Page</h1>
-    </div>
-  );
+export default function Details({}: Props) {
+  return <>{useResponsive(540) ? <DetailsDesktop /> : <DetailsMobile />}</>;
 }
