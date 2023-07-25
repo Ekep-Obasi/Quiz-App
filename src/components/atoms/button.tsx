@@ -33,7 +33,6 @@ const generate_type = ({ btn_type }: OptionalProps) => {
             `
         default:
             return css`
-            color: gold;
             border-radius: 5px;
         `
     }
@@ -42,7 +41,7 @@ const generate_type = ({ btn_type }: OptionalProps) => {
 const StyledButton = styled.button<OptionalProps>`
     color: ${(props: any) => props.theme.colors.white};
     background: ${(props: any) => props.theme.linearGradient};
-    width: 100%;
+    /* width: 100%; */
     padding: 0.4rem 0.8rem;
     margin: 10px auto;
     ${generate_type}
