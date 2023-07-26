@@ -1,6 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@emotion/react";
+import React from "react";
 
 const theme = (mode: string): object => {
   return mode === "light"
@@ -37,7 +38,7 @@ const theme = (mode: string): object => {
           normal: 300,
           bold: 500,
         },
-        linearGradient: `linear-gradient(90deg, rgba(50,113,226,1) 0%, rgba(48,133,229,1) 0%, rgba(46,157,233,1) 100%)`,
+        linearGradient: `var(--1, linear-gradient(135deg, #3550DC 0%, #27E9F7 100%))`,
         textShadow: `0px 4px 4px 0px rgba(0, 0, 0, 0.25)`,
       }
     : {};
